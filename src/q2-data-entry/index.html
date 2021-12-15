@@ -5,6 +5,32 @@
     <title>Data Entry</title>
     <style>
       /* Write your CSS here */
+      html,
+      body {
+        /* basic reset */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body > form {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 0 2%;
+      }
+      /* this style is to overide browser styles if needed, 
+      like in dark mode or default styles applied*/
+      body > form select,
+      body > form select option:not(:last-child) {
+        background-color: #fff;
+        color: #000;
+      }
+
+      body > form select option:last-child {
+        background-color: green;
+        color: #fff;
+      }
     </style>
   </head>
   <body>
