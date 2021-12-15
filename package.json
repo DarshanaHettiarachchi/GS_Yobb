@@ -8,6 +8,7 @@
     "serve:q1": "webpack serve --config webpack.config.js --env q1=true",
     "serve:q2": "webpack serve --config webpack.config.js --env q2=true",
     "serve:q3": "webpack serve --config webpack.config.js --env q3=true",
+    "serve:q4": "webpack serve --config webpack.config.js --env q4=true",
     "lint": "eslint --fix .",
     "prettier": "prettier --write ."
   },

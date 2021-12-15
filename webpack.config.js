@@ -47,6 +47,14 @@ module.exports = (env) => {
         },
       ],
     };
+  } else if (env.q4) {
+    devServer = {
+      ...devServer,
+      port: 8004,
+      static: {
+        directory: path.join(__dirname, "./src/q4-add"),
+      },
+    };
   }
 
   return {
