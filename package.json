@@ -1,0 +1,39 @@
+{
+  "name": "webpack-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "test": "jest",
+    "serve:q1": "webpack serve --config webpack.config.js --env q1=true",
+    "serve:q2": "webpack serve --config webpack.config.js --env q2=true",
+    "serve:q3": "webpack serve --config webpack.config.js --env q3=true",
+    "lint": "eslint --fix .",
+    "prettier": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.5",
+    "prettier": "2.5.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-merge": "^5.8.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-jest": "^27.4.5"
+  }
+}
