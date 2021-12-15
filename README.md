@@ -18,7 +18,7 @@ Please run `npm run serve:q2`. And navigate to `http://localhost:8002`.
 
 Please run `npm run serve:q3`. And navigate to `http://localhost:8003`
 
-- code is in src/q3-products/index.html.
+- code is in src/q3-products/app.js.
 - Please run `npm run test` to run tests.
 
 ## Q4 - Add
