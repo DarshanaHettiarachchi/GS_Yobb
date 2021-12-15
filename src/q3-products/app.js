@@ -1,12 +1,9 @@
 export const sortByPriceAscending = (productListJsonString) => {
-  const parsedProductArray = JSON.parse(productListJsonString);
-  const sortedProductArray = [...parsedProductArray].sort(
-    (productOne, productTwo) => {
-      if (productOne.price !== productTwo.price) {
-        return +productOne.price - +productTwo.price;
-      }
-      return productOne.name.trim().localeCompare(productTwo.name.trim());
-    }
+  const sortedProductArray = [...JSON.parse(productListJsonString)].sort(
+    (productOne, productTwo) =>
+      productOne.price !== productTwo.price
+        ? +productOne.price - +productTwo.price
+        : productOne.name.trim().localeCompare(productTwo.name.trim())
   );
 
   return JSON.stringify(sortedProductArray);
