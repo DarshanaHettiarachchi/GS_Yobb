@@ -4,6 +4,32 @@
     <title>Warehouse</title>
     <style>
       /* Write your CSS solution here */
+      /**
+      Even though this approach is fine, I find using child combinator more explicit
+     
+      body > ul li {
+        font-weight: bold;
+      }
+      body > ul li li {
+        font-weight: normal;
+        font-style: italic;
+      }
+      body > ul li li li {
+        font-style: normal;
+        text-decoration: underline;
+      } **/
+
+      body > ul > li {
+        font-weight: bold;
+      }
+      body > ul > li > ul > li {
+        font-weight: normal;
+        font-style: italic;
+      }
+      body > ul > li > ul > li > ul > li {
+        font-style: normal;
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
